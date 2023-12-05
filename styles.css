@@ -1,13 +1,90 @@
-ul {
-  background-color: rgb(0, 0, 0);
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: black;
-  color: azure;
+* {
   font-family: tahoma;
   text-align: center;
+}
+
+.head-container {
+  position: relative;
+  height: 100vh;
+  padding: 0%;
+  margin: 0%;
+}
+
+.background-img {
+  position: absolute;
+  outline: none;
+  margin: 0;
+  border: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(bilder/merligen-2991122.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  z-index: 1;
+}
+
+.head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  z-index: 2;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: rgba(255, 255, 255, 0.452);
+  letter-spacing: 10px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 6vw;
+  line-height: 30%;
+}
+
+.p {
+  font-size: 2vw;
+}
+
+.about-me {
+  height: 100vh;
+  padding: 0;
+  display: grid;
+  place-content: center;
+  background-color: rgb(208, 226, 43);
+}
+
+.experiences {
+  height: 100vh;
+  padding: 0;
+  display: grid;
+  place-content: center;
+  background-color: rgb(43, 61, 226);
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(43, 61, 226);
+    color: rgb(0, 0, 0);
+  }
+}
+
+.skills {
+  height: 100vh;
+  padding: 0;
+  display: grid;
+  place-content: center;
+  background-color: rgb(49, 49, 49);
+}
+
+.contact {
+  height: 100vh;
+  padding: 0;
+  display: grid;
+  place-content: center;
+  background-color: rgb(137, 43, 226);
 }

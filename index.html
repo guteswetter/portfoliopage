@@ -3,30 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simon Erni</title>
+    <title>Simon Erni - Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <style></style>
-    <script src="script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.29/dist/lenis.min.js"
+      defer
+    ></script>
+    <script src="https://unpkg.com/split-type" defer></script>
+    <script src="script.js" defer></script>
   </head>
 </html>
 
 <body>
-  <!-- <img
-    src="/bilder/merligen-2991122.jpg"
-    alt="Bild von Lukas Bieri auf Pixabay"
-    style="width: 100%"
-  /> -->
-
   <!-------------- Heading --------------------->
-
-  <div>
-    <h1>Simon Erni</h1>
-    <p>Projektleiter | Student</p>
-  </div>
+  <section class="head-container">
+    <div class="background-img"></div>
+    <div class="head">
+      <h1>Simon Erni</h1>
+      <p class="p">Projektleiter | Student</p>
+    </div>
+  </section>
 
   <!--------------- Über mich -------------------->
-  <div class="header">
-    <h1>Über mich</h1>
+  <section class="about-me">
+    <h2>Über mich</h2>
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum esse,
       <br />
@@ -36,34 +44,36 @@
       <br />
       iure pariatur.
     </p>
-  </div>
+  </section>
 
   <!--------------- Erfahrungen -------------------->
-  <div>
-    <h1>Erfahrungen</h1>
+  <section class="experiences">
+    <h2>Erfahrungen</h2>
     <ul>
       <li>Erfahrung 1</li>
       <li>Erfahrung 2</li>
       <li>Erfahrung 3</li>
     </ul>
-  </div>
+  </section>
 
   <!--------------- Skills -------------------->
-  <div>
-    <h1>Skills</h1>
+  <section class="skills">
+    <h2>Skills</h2>
     <ul>
       <li>Lorem</li>
       <li>ipsum</li>
       <li>dolor</li>
     </ul>
-  </div>
+  </section>
 
   <!--------------- Kontakt -------------------->
-  <div>
-    <h1>Kontakt</h1>
+  <section class="contact">
+    <h2>Kontakt</h2>
     <ul>
       <li>Simon Erni</li>
       <li>simon.erni@students.bfh.ch</li>
     </ul>
-  </div>
+  </section>
+
+  <section></section>
 </body>
