@@ -17,6 +17,7 @@
       src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.29/dist/lenis.min.js"
       defer
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
     <script src="https://unpkg.com/split-type" defer></script>
     <script src="script.js" defer></script>
   </head>
@@ -34,46 +35,65 @@
 
   <!--------------- Über mich -------------------->
   <section class="about-me">
-    <h2>Über mich</h2>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum esse,
-      <br />
-      laborum adipisci hic harum molestiae inventore fugit repudiandae porro
-      <br />
-      deleniti quia quibusdam exercitationem architecto ducimus sunt neque vitae
-      <br />
-      iure pariatur.
-    </p>
+    <div class="container">
+      <div class="img">
+        <img src="bilder/_DSC7127_rund.png" style="width: 15vw; height: auto" />
+      </div>
+      <h2>Über mich</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum esse,
+        <br />
+        laborum adipisci hic harum molestiae inventore fugit repudiandae porro
+        <br />
+        deleniti quia quibusdam exercitationem architecto ducimus sunt neque
+        vitae
+        <br />
+        iure pariatur.
+      </p>
+    </div>
   </section>
 
   <!--------------- Erfahrungen -------------------->
   <section class="experiences">
-    <h2>Erfahrungen</h2>
-    <ul>
-      <li>Erfahrung 1</li>
-      <li>Erfahrung 2</li>
-      <li>Erfahrung 3</li>
-    </ul>
+    <div class="container">
+      <h2>Erfahrungen</h2>
+      <ul>
+        <li>Erfahrung 1</li>
+        <li>Erfahrung 2</li>
+        <li>Erfahrung 3</li>
+      </ul>
+    </div>
   </section>
 
   <!--------------- Skills -------------------->
   <section class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Lorem</li>
-      <li>ipsum</li>
-      <li>dolor</li>
-    </ul>
+    <p>HTML</p>
+    <div class="bar">
+      <div class="progress-bar html">85%</div>
+    </div>
+
+    <p>CSS</p>
+    <div class="bar">
+      <div class="progress-bar css">90%</div>
+    </div>
+
+    <p>JavaScript</p>
+    <div class="bar">
+      <div class="progress-bar js">65%</div>
+    </div>
+
+    <p>Angular</p>
+    <div class="bar">
+      <div class="progress-bar angular">40%</div>
+    </div>
   </section>
 
   <!--------------- Kontakt -------------------->
-  <section class="contact">
+  <div class="contact">
     <h2>Kontakt</h2>
     <ul>
       <li>Simon Erni</li>
       <li>simon.erni@students.bfh.ch</li>
     </ul>
-  </section>
-
-  <section></section>
+  </div>
 </body>

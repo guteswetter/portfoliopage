@@ -1,17 +1,73 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.from(".head-container", { duration: 2, opacity: 0, delay: 0.5 });
-/* gsap.from(".about-me", {
+gsap.from(".head-container", { duration: 2, opacity: 0, delay: 0 });
+
+gsap.from(".about-me", {
   scrollTrigger: {
     trigger: ".about-me",
-    start: "top center",
+    start: "top bottom",
+    toggleActions: "restart pause play restart",
+  },
+  duration: 2.5,
+  x: "100vw",
+});
+
+gsap.from(".img", {
+  scrollTrigger: {
+    trigger: ".about-me",
+    start: "top bottom",
+    toggleActions: "restart pause play restart",
+  },
+  duration: 4,
+  rotation: 720,
+  x: "100vw",
+});
+
+gsap.from(".experiences", {
+  scrollTrigger: {
+    trigger: ".experiences",
+    start: "top bottom",
+    toggleActions: "restart pause play restart",
+  },
+  duration: 2.5,
+  x: "-100vw",
+});
+
+gsap.from(".skills", {
+  scrollTrigger: {
+    trigger: ".skills",
+    start: "top bottom",
+    toggleActions: "restart pause play restart",
+  },
+  duration: 2.5,
+  x: "100vw",
+});
+
+/* gsap.to(".html", {
+  scrollTrigger: {
+    trigger: ".skills",
+    start: "top bottom",
+    toggleActions: "restart pause play restart",
+  },
+  duration: 2.5,
+  ease: CustomEase.create(
+    "custom",
+    "M0,0 C0.272,0 0.452,-0.001 0.5,0 0.638,0 0.744,0 1,0 "
+  ),
+  x: "-100vw",
+}); */
+
+/* gsap.from(".experiences", {
+  scrollTrigger: {
+    trigger: ".experiences",
+    start: "top top",
     markers: true,
     toggleActions: "restart pause pause pause",
   },
   duration: 2,
-  x: "50vw",
+  x: "-100vw",
 }); */
 
-const splitTypes = document.querySelectorAll(".reveal-type");
+/* const splitTypes = document.querySelectorAll(".reveal-type");
 
 splitTypes.forEach((char, i) => {
   const text = new splitTypes(char, { types: "chars" });
@@ -36,9 +92,9 @@ lenis.on("scroll", (e) => {
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);
-}
+} 
 
-requestAnimationFrame(raf);
+requestAnimationFrame(raf); */
 
 /* window.addEventListener("scroll", function () {
   var headContainer = document.querySelector(".head-container");
