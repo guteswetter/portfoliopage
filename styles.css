@@ -142,12 +142,11 @@ ul {
     background-position-x: 65vw;
     position: fixed;
     z-index: 2;
-  } */
+  }  */
 }
-
 .html {
   width: 85%;
-  background-color: rgb(212, 85, 21);
+  background-color: #ff5c00;
 }
 
 .css {

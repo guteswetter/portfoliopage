@@ -32,14 +32,14 @@ gsap.from(".experiences", {
   x: "-100vw",
 });
 
-gsap.from(".skills", {
+gsap.from(".html", {
   scrollTrigger: {
     trigger: ".skills",
     start: "top bottom",
     toggleActions: "restart pause play restart",
   },
   duration: 2.5,
-  x: "100vw",
+  x: "-100vw",
 });
 
 /* gsap.to(".html", {
