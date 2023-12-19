@@ -14,6 +14,11 @@ html {
   margin: 0;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-size: 3vw;
   letter-spacing: 1vw;
@@ -128,45 +133,77 @@ ul {
   }
 }
 
-.skillbar {
-  width: 50vw;
-  background-color: rgba(255, 255, 255, 0.356);
+/* Skill bars */
+
+.skill-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.progress-bar {
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  color: white;
-
-  /* .html-logo {
-    background-image: url(bilder/html-5-logo-svgrepo-com.svg);
-    background-size: 10%;
-    background-position-x: 65vw;
-    position: fixed;
-    z-index: 2;
-  }  */
-}
-.html {
-  width: 85%;
-  background-color: #ff5c00;
+.skill {
+  width: 40vw;
+  height: 40px;
+  background-color: lightgray;
+  margin-bottom: 15px;
+  position: relative;
 }
 
-.css {
-  width: 90%;
-  background-color: rgb(21, 81, 212);
+.skill::after {
+  content: attr(data-name);
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
 }
 
-.js {
-  width: 65%;
-  background-color: rgb(239, 243, 28);
+.bar {
+  height: 100%;
+  width: 0;
+  transition: width 1s ease-in-out;
 }
 
-.angular {
-  width: 40%;
-  background-color: rgb(212, 27, 21);
+.html .bar {
+  background-color: orange;
 }
+
+.css .bar {
+  background-color: #2965f1;
+}
+
+.javascript .bar {
+  background-color: #f0db4f;
+}
+
+.angular .bar {
+  background-color: #dd0031;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 40px;
+  height: 40px;
+  transition: left 1s ease-in-out;
+  z-index: 1;
+}
+
+.skill .bar {
+  position: relative;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+/* Navigation */
 
 .navbar {
   display: flex;
@@ -223,7 +260,7 @@ ul {
   cursor: pointer;
 }
 
-.bar {
+.mobile-bar {
   height: 3px;
   width: 25px;
   background-color: #fff;

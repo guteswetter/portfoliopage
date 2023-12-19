@@ -32,16 +32,6 @@ gsap.from(".experiences", {
   x: "-100vw",
 });
 
-gsap.from(".html", {
-  scrollTrigger: {
-    trigger: ".skills",
-    start: "top bottom",
-    toggleActions: "restart pause play restart",
-  },
-  duration: 2.5,
-  x: "-100vw",
-});
-
 const menuToggle = document.getElementById("mobile-menu");
 const navList = document.querySelector(".nav-list");
 
@@ -49,72 +39,29 @@ menuToggle.addEventListener("click", () => {
   navList.classList.toggle("active");
 });
 
-/* gsap.to(".html", {
-  scrollTrigger: {
-    trigger: ".skills",
-    start: "top bottom",
-    toggleActions: "restart pause play restart",
-  },
-  duration: 2.5,
-  ease: CustomEase.create(
-    "custom",
-    "M0,0 C0.272,0 0.452,-0.001 0.5,0 0.638,0 0.744,0 1,0 "
-  ),
-  x: "-100vw",
-}); */
+function animateSkills() {
+  const skills = document.querySelectorAll(".skill");
 
-/* gsap.from(".experiences", {
-  scrollTrigger: {
-    trigger: ".experiences",
-    start: "top top",
-    markers: true,
-    toggleActions: "restart pause pause pause",
-  },
-  duration: 2,
-  x: "-100vw",
-}); */
+  skills.forEach((skill) => {
+    const value = skill.getAttribute("data-value");
+    const bar = skill.querySelector(".bar");
+    bar.style.width = `${value}%`;
 
-/* const splitTypes = document.querySelectorAll(".reveal-type");
-
-splitTypes.forEach((char, i) => {
-  const text = new splitTypes(char, { types: "chars" });
-  gsap.from(text.chars, {
-    scrollTrigger: {
-      trigger: char,
-      start: "top 80%",
-      end: "top 20%",
-      scrub: true,
-    },
-    opacity: 0.2,
-    stagger: 0.1,
+    const logo = skill.querySelector(".logo");
+    logo.style.left = `calc(${value}% - 30px)`; // Adjust the value based on logo width
   });
-});
+}
 
-const lenis = new Lenis();
+function checkVisibility() {
+  const skillsSection = document.querySelector(".skill-bar");
+  const skillsSectionPos = skillsSection.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+  const threshold = windowHeight * 0.75;
 
-lenis.on("scroll", (e) => {
-  console.log(e);
-});
-
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-} 
-
-requestAnimationFrame(raf); */
-
-/* window.addEventListener("scroll", function () {
-  var headContainer = document.querySelector(".head-container");
-  var bodyContainer = document.querySelector(".body-container");
-  var scrollPosition = window.scrollY;
-
-  if (scrollPosition <= window.innerHeight) {
-    headContainer.style.opacity = "0";
-    headContainer.style.pointerEvents = "none";
-    bodyContainer.style.display = "block";
-  } else {
-    headContainer.style.opacity = "1";
-    headContainer.style.pointerEvents = "auto";
-    bodyContainer.style.display = "none";
+  if (skillsSectionPos < threshold) {
+    animateSkills();
+    window.removeEventListener("scroll", checkVisibility);
   }
-}); */
+}
+
+window.addEventListener("scroll", checkVisibility);
