@@ -17,21 +17,31 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: rgb(51, 50, 50);
 }
 
 h1 {
   font-size: 3vw;
   letter-spacing: 1vw;
+  color: black;
 }
 
 h2 {
   font-size: 2vw;
   letter-spacing: 0.5vw;
+  color: white;
+}
+
+h3 {
+  font-size: 2vw;
+  letter-spacing: 0.5vw;
+  color: black;
 }
 
 p {
   font-size: 1vw;
   letter-spacing: 0.5vw;
+  color: white;
 }
 
 ul {
@@ -84,6 +94,7 @@ ul {
   h2 {
     font-size: 2vw;
     line-height: 10%;
+    color: black;
   }
 
   .p {
@@ -100,37 +111,13 @@ ul {
   z-index: 0;
 }
 
-.about-me {
+section {
   background-color: rgb(51, 50, 50);
-  color: white;
-  top: 5%;
-}
-
-.experiences {
-  background-color: rgb(43, 61, 226);
-}
-
-.skills {
   height: 100vh;
-  padding: 0;
-  display: grid;
-  place-content: center;
   width: 100vw;
-  z-index: 0;
-  background-color: rgb(49, 49, 49);
-  color: white;
-}
-
-.contact {
-  height: 100vh;
-  padding: 3vh;
   top: 50%;
   bottom: 50%;
-  background-color: rgb(137, 43, 226);
-
-  h2 {
-    font-size: 2vw;
-  }
+  padding-top: 10vh;
 }
 
 /* Skill bars */
@@ -142,6 +129,7 @@ ul {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
+  z-index: 0;
 }
 
 .skill {
@@ -164,7 +152,7 @@ ul {
 .bar {
   height: 100%;
   width: 0;
-  transition: width 1s ease-in-out;
+  transition: width 2s ease-in-out;
 }
 
 .html .bar {
@@ -188,10 +176,10 @@ ul {
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-  width: 40px;
-  height: 40px;
-  transition: left 1s ease-in-out;
-  z-index: 1;
+  width: 50px;
+  height: 50px;
+  transition: left 2s ease-in-out;
+  z-index: 2;
 }
 
 .skill .bar {
@@ -283,4 +271,74 @@ ul {
   .menu-toggle {
     display: flex;
   }
+}
+
+/* Timeline */
+
+.container {
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 80vh;
+  background-color: #ccc;
+  transform: translateX(-50%);
+}
+
+.stations {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+.station {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+}
+
+.left {
+  margin-right: 400px; /* Gap between stations on left */
+  transform: translateX(-100%); /* Move left stations off screen initially */
+}
+
+.right {
+  margin-left: 400px; /* Gap between stations on right */
+  transform: translateX(100%); /* Move right stations off screen initially */
+}
+
+.station.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.station.left::before,
+.station.right::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 120px; /* Length of the connecting line */
+  height: 2px;
+  background-color: #ccc;
+  z-index: -1;
+}
+
+.station.left::before {
+  left: 100%; /* Connect from right side */
+}
+
+.station.right::before {
+  right: 100%; /* Connect from left side */
 }
