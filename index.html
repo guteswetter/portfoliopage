@@ -46,47 +46,137 @@
   </section>
 
   <!--------------- Über mich -------------------->
-  <section class="about-me">
-    <div class="container" id="UeberMich">
-      <div class="img">
-        <img src="bilder/_DSC7127_rund.png" style="width: 15vw; height: auto" />
-      </div>
-      <h2>Über mich</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum esse,
-        <br />
-        laborum adipisci hic harum molestiae inventore fugit repudiandae porro
-        <br />
-        deleniti quia quibusdam exercitationem architecto ducimus sunt neque
-        vitae
-        <br />
-        iure pariatur.
-        <br />
-      </p>
+  <section class="about-me container" id="UeberMich">
+    <div class="img">
+      <img src="bilder/_DSC7127_rund.png" style="width: 15vw; height: auto" />
     </div>
+    <h2>Über mich</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum esse,
+      <br />
+      laborum adipisci hic harum molestiae inventore fugit repudiandae porro
+      <br />
+      deleniti quia quibusdam exercitationem architecto ducimus sunt neque vitae
+      <br />
+      iure pariatur.
+      <br />
+    </p>
   </section>
 
   <!--------------- Erfahrungen -------------------->
-  <section class="experiences" id="Erfahrungen">
+  <section class="experiences container" id="Erfahrungen">
     <h2>Erfahrungen</h2>
-    <div class="container">
+    <ul class="timeline">
+      <!-- Item 1 -->
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Junior Projektleiter digital</span>
+            <span class="time-wrapper"
+              ><span class="time">05.2023 - heute</span></span
+            >
+          </div>
+          <div class="desc">
+            Durchführen kleinerer Projekte, Anforderungsanalyse, Microsoft Power
+            Platform
+          </div>
+        </div>
+      </li>
+
+      <!-- Item 2 -->
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Kaufmännischer Angestellter</span>
+            <span class="time-wrapper"
+              ><span class="time">09.2018 - heute</span></span
+            >
+          </div>
+          <div class="desc">
+            Akquisition, Erarbeiten technischer Beilagen, Administrative
+            Tätigkeiten
+          </div>
+        </div>
+      </li>
+
+      <!-- Item 3 -->
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Lorem Occaecat.</span>
+            <span class="time-wrapper"
+              ><span class="time">July 2014</span></span
+            >
+          </div>
+          <div class="desc">
+            Lorem ipsum Minim labore Ut cupidatat quis qui deserunt proident
+            fugiat pariatur cillum cupidatat reprehenderit sit id dolor
+            consectetur ut.
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <!--    <h2>Erfahrungen</h2>
+    <div class="timeline">
       <div class="line"></div>
       <div class="stations">
-        <div class="station left">Station 1</div>
-        <div class="station right">Station 2</div>
-        <div class="station left">Station 3</div>
-        <div class="station right">Station 4</div>
-        <div class="station left">Station 5</div>
-        <div class="station right">Station 6</div>
-        <div class="station left">Station 7</div>
-        <div class="station right">Station 8</div>
+        <div class="station">
+          <b>Junior Projektleiter digital</b>
+          <div>KIBAG Dienstleistungen AG</div>
+          <div>05.2023 - heute</div>
+        </div>
+        <div class="station">
+          <b>Kaufmännischer Angestellter</b>
+          <div>KIBAG Bauleistungen AG</div>
+          <div>09.2018 - heute</div>
+        </div>
+        <div class="station">
+          <b>Bachelorstudium Wirtschaftsinformatik</b>
+          <div>Berner Fachhochschule BFH</div>
+          <div>09.2020 - heute</div>
+        </div>
+        <div class="station">
+          <b>Kaufmännischer Angestellter</b>
+          <div>Cäsar Bay AG</div>
+          <div>08.2016 - 08.2018</div>
+        </div>
+        <div class="station">
+          <b>Berufsmaturität Typ Wirtschaft</b>
+          <div>WKS Bildung</div>
+          <div>08.2016 - 07.2018</div>
+        </div>
+        <div class="station">
+          <b>Praktikant</b>
+          <div>Bundesamt für Informatik und Telekommunikation BIT</div>
+          <div>02.2016 - 07.2016</div>
+        </div>
+        <div class="station">
+          <b>Zivildienst</b>
+          <div>FONDATION gad STIFTUNG</div>
+          <div>05.2015 - 11.2015</div>
+        </div>
+        <div class="station">
+          <b>Rekrutenschule</b>
+          <div>Flugplatzsicherungssoldat</div>
+          <div>10.2014 - 04.2015</div>
+        </div>
+        <div class="station">
+          <b>Kaufmännische Grundbildung EFZ</b>
+          <div>Wirtschaftsmittelschule</div>
+          <div>08.2011 - 07.2014</div>
+        </div>
       </div>
     </div>
+    -->
   </section>
 
   <!--------------- Skills -------------------->
 
-  <section class="skills" id="Fähigkeiten">
+  <section class="skills container" id="Fähigkeiten">
     <h2>Skills</h2>
     <div class="skill-bar">
       <div class="skill html" data-name="HTML" data-value="80">
@@ -110,10 +200,121 @@
 
   <!--------------- Kontakt -------------------->
   <div class="contact" id="Kontakt">
-    <h2>Kontakt</h2>
-    <ul>
-      <li>Simon Erni</li>
-      <li>simon.erni@students.bfh.ch</li>
-    </ul>
+    <div>
+      <h2>Kontakt</h2>
+      <p>Simon Erni</p>
+      <p>simon.erni@students.bfh.ch</p>
+    </div>
+
+    <div class="right form form-container header">
+      <div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto">
+          <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+            <div class="text-center">
+              <p class="text-gray-400 dark:text-gray-400">
+                Fülle das untenstehende Formular aus, um mir eine Nachricht zu
+                senden.
+              </p>
+            </div>
+            <div class="m-7">
+              <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                id="form"
+              >
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="4305e1e2-3dc2-4e5c-b79e-6dc1745d3628"
+                />
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="Neue Nachricht erhalten (Portfolioseite)"
+                />
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  id=""
+                  style="display: none"
+                />
+
+                <div class="mb-6 form-container left">
+                  <label
+                    for="name"
+                    class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                    >Vollständiger Name*</label
+                  >
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Max Muster"
+                    required
+                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500 form-container right"
+                  />
+                </div>
+                <div class="mb-6 form-container left">
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                    >Email*</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="max@muster.ch"
+                    required
+                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500 form-container left"
+                  />
+                </div>
+
+                <div class="mb-6 form-container left">
+                  <label
+                    for="phone"
+                    class="text-sm text-gray-600 dark:text-gray-400"
+                    >Telefonnummer</label
+                  >
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="+41 79 123 45 67"
+                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500 form-container right"
+                  />
+                </div>
+                <div class="mb-6 form-container left">
+                  <label
+                    for="message"
+                    class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                    >Deine Nachricht*</label
+                  >
+
+                  <textarea
+                    rows="5"
+                    name="message"
+                    id="message"
+                    placeholder="Deine Nachricht"
+                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500 form-container right"
+                    required
+                  ></textarea>
+                </div>
+                <div class="mb-6">
+                  <button
+                    type="submit"
+                    class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none"
+                  >
+                    Absenden
+                  </button>
+                </div>
+                <p class="text-base text-center text-gray-400" id="result"></p>
+                <p>* Pflichtfeld</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
