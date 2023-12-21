@@ -206,10 +206,16 @@ section {
 
 /* Kontaktformular */
 
-form {
-  display: contents;
-  padding: 10px;
-  border-style: dotted;
+.form {
+  border-style: dashed;
+  border-color: #fff;
+  padding: 5vh;
+  margin-left: 35vw;
+  margin-right: 35vw;
+
+  p {
+    font-size: medium;
+  }
 }
 
 .form-container {
@@ -217,23 +223,21 @@ form {
   grid-template-columns: 2fr 1fr 1fr 2fr;
   grid-template-rows: 0.5fr 4fr 0.5fr;
   gap: 1px 0px;
-  grid-auto-flow: row;
-
-  .right {
-    grid-area: 1 / 2 / 2 / 3;
-  }
-
-  .left {
-    grid-area: 1 / 2 / 2 / 4;
-  }
-
-  .footer {
-    grid-area: 3 / 2 / 4 / 4;
-  }
-
-  .header {
-    grid-area: 1 / 2 / 2 / 4;
-  }
+}
+.right {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.left {
+  grid-area: 1 / 2 / 2 / 4;
+}
+.footer {
+  grid-area: 3 / 2 / 4 / 4;
+}
+.header {
+  grid-area: 1 / 2 / 2 / 4;
+}
+.center {
+  grid-area: 2 / 2 / 3 / 4;
 }
 
 /* Navigation */

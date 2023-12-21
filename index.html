@@ -199,122 +199,92 @@
   </section>
 
   <!--------------- Kontakt -------------------->
-  <div class="contact" id="Kontakt">
-    <div>
-      <h2>Kontakt</h2>
-      <p>Simon Erni</p>
-      <p>simon.erni@students.bfh.ch</p>
-    </div>
+  <div class="contact form" id="Kontakt">
+    <p class="text-gray-400 dark:text-gray-400">
+      Fülle das untenstehende Formular aus, um mir eine Nachricht zu senden.
+    </p>
+    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+      <input
+        type="hidden"
+        name="access_key"
+        value="4305e1e2-3dc2-4e5c-b79e-6dc1745d3628"
+      />
+      <input
+        type="hidden"
+        name="subject"
+        value="Neue Nachricht erhalten (Portfolioseite)"
+      />
+      <input type="checkbox" name="botcheck" id="" style="display: none" />
 
-    <div class="right form form-container header">
-      <div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
-        <div class="container mx-auto">
-          <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
-            <div class="text-center">
-              <p class="text-gray-400 dark:text-gray-400">
-                Fülle das untenstehende Formular aus, um mir eine Nachricht zu
-                senden.
-              </p>
-            </div>
-            <div class="m-7">
-              <form
-                action="https://api.web3forms.com/submit"
-                method="POST"
-                id="form"
-              >
-                <input
-                  type="hidden"
-                  name="access_key"
-                  value="4305e1e2-3dc2-4e5c-b79e-6dc1745d3628"
-                />
-                <input
-                  type="hidden"
-                  name="subject"
-                  value="Neue Nachricht erhalten (Portfolioseite)"
-                />
-                <input
-                  type="checkbox"
-                  name="botcheck"
-                  id=""
-                  style="display: none"
-                />
-
-                <div class="mb-6 form-container left">
-                  <label
-                    for="name"
-                    class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
-                    >Vollständiger Name*</label
-                  >
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Max Muster"
-                    required
-                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500 form-container right"
-                  />
-                </div>
-                <div class="mb-6 form-container left">
-                  <label
-                    for="email"
-                    class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
-                    >Email*</label
-                  >
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="max@muster.ch"
-                    required
-                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500 form-container left"
-                  />
-                </div>
-
-                <div class="mb-6 form-container left">
-                  <label
-                    for="phone"
-                    class="text-sm text-gray-600 dark:text-gray-400"
-                    >Telefonnummer</label
-                  >
-                  <input
-                    type="text"
-                    name="phone"
-                    id="phone"
-                    placeholder="+41 79 123 45 67"
-                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500 form-container right"
-                  />
-                </div>
-                <div class="mb-6 form-container left">
-                  <label
-                    for="message"
-                    class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
-                    >Deine Nachricht*</label
-                  >
-
-                  <textarea
-                    rows="5"
-                    name="message"
-                    id="message"
-                    placeholder="Deine Nachricht"
-                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500 form-container right"
-                    required
-                  ></textarea>
-                </div>
-                <div class="mb-6">
-                  <button
-                    type="submit"
-                    class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none"
-                  >
-                    Absenden
-                  </button>
-                </div>
-                <p class="text-base text-center text-gray-400" id="result"></p>
-                <p>* Pflichtfeld</p>
-              </form>
-            </div>
-          </div>
-        </div>
+      <div>
+        <label
+          for="name"
+          class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+          >Vollständiger Name*</label
+        >
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Max Muster"
+          required
+          class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+        />
       </div>
-    </div>
+      <div>
+        <label
+          for="email"
+          class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+          >Email*</label
+        >
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="max@muster.ch"
+          required
+          class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+        />
+      </div>
+
+      <div>
+        <label for="phone" class="text-sm text-gray-600 dark:text-gray-400"
+          >Telefonnummer</label
+        >
+        <input
+          type="text"
+          name="phone"
+          id="phone"
+          placeholder="+41 79 123 45 67"
+          class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+        />
+      </div>
+      <div>
+        <label
+          for="message"
+          class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+          >Deine Nachricht*</label
+        >
+
+        <textarea
+          rows="5"
+          name="message"
+          id="message"
+          placeholder="Deine Nachricht"
+          class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+          required
+        ></textarea>
+      </div>
+      <div>
+        <button
+          type="submit"
+          class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none"
+        >
+          Absenden
+        </button>
+      </div>
+      <p id="result"></p>
+      <p>* Pflichtfeld</p>
+    </form>
   </div>
 </body>
