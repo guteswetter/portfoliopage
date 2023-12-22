@@ -65,14 +65,32 @@
 
   <!--------------- Erfahrungen -------------------->
   <section class="experiences container" id="Erfahrungen">
-    <h2>Erfahrungen</h2>
+    <h2>Werdegang</h2>
     <ul class="timeline">
       <!-- Item 1 -->
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag"
+              >Bachelor of Science in Wirtschaftsinformatik</span
+            >
+            <span class="time-wrapper"
+              ><span class="time">09.2020 - 02.2025</span></span
+            >
+          </div>
+          <div class="desc">
+            Stduium Wirtschaftsinformatik an der Berner Fachhochschule BFH.
+          </div>
+        </div>
+      </li>
+
+      <!-- Item 2 -->
       <li>
         <div class="direction-r">
           <div class="flag-wrapper">
             <span class="hexa"></span>
-            <span class="flag">Junior Projektleiter digital</span>
+            <span class="flag">Junior Projektleiter digital bei KIBAG</span>
             <span class="time-wrapper"
               ><span class="time">05.2023 - heute</span></span
             >
@@ -84,12 +102,12 @@
         </div>
       </li>
 
-      <!-- Item 2 -->
+      <!-- Item 3 -->
       <li>
         <div class="direction-l">
           <div class="flag-wrapper">
             <span class="hexa"></span>
-            <span class="flag">Kaufmännischer Angestellter</span>
+            <span class="flag">Kaufmännischer Angestellter bei KIBAG</span>
             <span class="time-wrapper"
               ><span class="time">09.2018 - heute</span></span
             >
@@ -101,21 +119,98 @@
         </div>
       </li>
 
-      <!-- Item 3 -->
+      <!-- Item 4 -->
       <li>
         <div class="direction-r">
           <div class="flag-wrapper">
             <span class="hexa"></span>
-            <span class="flag">Lorem Occaecat.</span>
+            <span class="flag">Berufsmaturität bei WKS KV Bildung</span>
             <span class="time-wrapper"
-              ><span class="time">July 2014</span></span
+              ><span class="time">08.2016 - 07.2018</span></span
+            >
+          </div>
+          <div class="desc">Berufsmaturität Typ Wirtschaft</div>
+        </div>
+      </li>
+
+      <!-- Item 5 -->
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag"
+              >Kaufmännischer Angestellter bei Cäsar Bay AG</span
+            >
+            <span class="time-wrapper"
+              ><span class="time">08.2016 - 07.2018</span></span
+            >
+          </div>
+          <div class="desc">Submissionsprozesse, Administration</div>
+        </div>
+      </li>
+
+      <!-- Item 6 -->
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag"
+              >Praktikum bei Bundesamt für Informatik und Telekommunikation
+              BIT</span
+            >
+            <span class="time-wrapper"
+              ><span class="time">02.2016 - 07.2016</span></span
             >
           </div>
           <div class="desc">
-            Lorem ipsum Minim labore Ut cupidatat quis qui deserunt proident
-            fugiat pariatur cillum cupidatat reprehenderit sit id dolor
-            consectetur ut.
+            Onboardingprozesse, Qualitätssicherung, Bereitstellung von Hardware
           </div>
+        </div>
+      </li>
+
+      <!-- Item 7 -->
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Zivildienst bei Foyer VIADUKT</span>
+            <span class="time-wrapper"
+              ><span class="time">05.2015 - 11.2015</span></span
+            >
+          </div>
+          <div class="desc">
+            Kochen, Instandhaltung Gebäude und Umschwung, Betreuung der Bewohner
+          </div>
+        </div>
+      </li>
+
+      <!-- Item 7 -->
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Rekrutenschule bei Schweizerische Armee</span>
+            <span class="time-wrapper"
+              ><span class="time">10.2014 - 04.2015</span></span
+            >
+          </div>
+          <div class="desc">Flugplatzsicherungssoldat, Fliegertruppen</div>
+        </div>
+      </li>
+
+      <!-- Item 8 -->
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag"
+              >Ausbildung zum Kaufmann bei Wirtschaftsmittelschule</span
+            >
+            <span class="time-wrapper"
+              ><span class="time">08.2011 - 07.2014</span></span
+            >
+          </div>
+          <div class="desc">Kaufmann EFZ, E-Profil</div>
         </div>
       </li>
     </ul>
@@ -199,92 +294,90 @@
   </section>
 
   <!--------------- Kontakt -------------------->
-  <div class="contact form" id="Kontakt">
-    <p class="text-gray-400 dark:text-gray-400">
-      Fülle das untenstehende Formular aus, um mir eine Nachricht zu senden.
-    </p>
-    <form action="https://api.web3forms.com/submit" method="POST" id="form">
-      <input
-        type="hidden"
-        name="access_key"
-        value="4305e1e2-3dc2-4e5c-b79e-6dc1745d3628"
-      />
-      <input
-        type="hidden"
-        name="subject"
-        value="Neue Nachricht erhalten (Portfolioseite)"
-      />
-      <input type="checkbox" name="botcheck" id="" style="display: none" />
+  <div class="contact container" id="Kontakt">
+    <h2>Kontakt</h2>
+    <button id="toggleButton" class="kontakt-button">Kontaktier mich!</button>
+    <div class="main-containter" id="mainContainer">
+      <div class="form-container" id="formContainer">
+        <p>
+          Fülle das untenstehende Formular aus, um mir eine Nachricht zu senden.
+        </p>
+        <br />
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          id="form"
+          class="contact-form"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="4305e1e2-3dc2-4e5c-b79e-6dc1745d3628"
+          />
+          <input
+            type="hidden"
+            name="subject"
+            value="Neue Nachricht erhalten (Portfolioseite)"
+          />
+          <input type="checkbox" name="botcheck" id="" style="display: none" />
 
-      <div>
-        <label
-          for="name"
-          class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
-          >Vollständiger Name*</label
-        >
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Max Muster"
-          required
-          class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
-        />
-      </div>
-      <div>
-        <label
-          for="email"
-          class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
-          >Email*</label
-        >
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="max@muster.ch"
-          required
-          class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
-        />
-      </div>
+          <div class="form-group">
+            <label for="name">Vollständiger Name*</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Max Muster"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="max@muster.ch"
+              required
+            />
+          </div>
 
-      <div>
-        <label for="phone" class="text-sm text-gray-600 dark:text-gray-400"
-          >Telefonnummer</label
-        >
-        <input
-          type="text"
-          name="phone"
-          id="phone"
-          placeholder="+41 79 123 45 67"
-          class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
-        />
-      </div>
-      <div>
-        <label
-          for="message"
-          class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
-          >Deine Nachricht*</label
-        >
+          <div class="form-group">
+            <label for="phone">Telefonnummer</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="+41 79 123 45 67"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Mitteilung*</label>
 
-        <textarea
-          rows="5"
-          name="message"
-          id="message"
-          placeholder="Deine Nachricht"
-          class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
-          required
-        ></textarea>
+            <textarea
+              rows="5"
+              name="message"
+              id="message"
+              placeholder="Deine Nachricht"
+              required
+            ></textarea>
+          </div>
+          <div>
+            <button type="submit">Absenden</button>
+          </div>
+          <p id="result"></p>
+          <p>* Pflichtfeld</p>
+        </form>
       </div>
-      <div>
-        <button
-          type="submit"
-          class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none"
-        >
-          Absenden
-        </button>
-      </div>
-      <p id="result"></p>
-      <p>* Pflichtfeld</p>
-    </form>
+    </div>
+  </div>
+
+  <div class="footer-icons">
+    <a href="https://www.linkedin.com/in/simon-erni-3a442129a/"
+      ><img src="/bilder/linkedin.svg"
+    /></a>
+    <a href="mailto:simon.erni@students.bfh.ch"
+      ><img src="/bilder/email.svg"
+    /></a>
   </div>
 </body>

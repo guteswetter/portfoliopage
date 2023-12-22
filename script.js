@@ -32,7 +32,7 @@ gsap.from(".experiences", {
   x: "-100vw",
 });
 
-/* Navigation */
+// Navigation
 
 const menuToggle = document.getElementById("mobile-menu");
 const navList = document.querySelector(".nav-list");
@@ -41,7 +41,7 @@ menuToggle.addEventListener("click", () => {
   navList.classList.toggle("active");
 });
 
-/* Skill bars */
+// Skill bars
 
 function animateSkills() {
   const skills = document.querySelectorAll(".skill");
@@ -68,7 +68,7 @@ function checkVisibility() {
   }
 }
 
-/* Timeline */
+// Timeline
 
 window.addEventListener("scroll", checkVisibility);
 
@@ -92,7 +92,7 @@ window.addEventListener("resize", checkInView);
 // Check initial view
 checkInView();
 
-/* Kontaktformular */
+// Kontaktformular - web3forms API
 
 const form = document.getElementById("form");
 const result = document.getElementById("result");
@@ -139,3 +139,28 @@ form.addEventListener("submit", function (e) {
       }, 5000);
     });
 });
+
+// Kontaktformular mit Button einblenden
+
+const formContainer = document.getElementById("formContainer");
+const toggleButton = document.getElementById("toggleButton");
+const mainContainer = document.getElementById("mainContainer");
+
+// Formular ausblenden
+formContainer.style.display = "none";
+
+// Formular mit Button klick anzeigen
+function toggleForm() {
+  if (formContainer.style.display === "none") {
+    formContainer.style.display = "block";
+    toggleButton.style.display = "none";
+    mainContainer.style.transform = "300px";
+  } else {
+    formContainer.style.display = "none";
+    toggleButton.style.display = "block";
+    mainContainer.style.transform = "100px";
+  }
+}
+
+// Event listener für Button
+toggleButton.addEventListener("click", toggleForm);
