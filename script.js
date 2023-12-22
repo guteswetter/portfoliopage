@@ -1,35 +1,14 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.from(".head-container", { duration: 2, opacity: 0, delay: 0 });
+gsap.from(".head", { duration: 3, opacity: 0, delay: 0 });
 
-gsap.from(".about-me", {
+gsap.from(".about-text", {
   scrollTrigger: {
-    trigger: ".about-me",
+    trigger: ".about-content",
     start: "top bottom",
     toggleActions: "restart pause play restart",
   },
   duration: 2.5,
   x: "100vw",
-});
-
-gsap.from(".img", {
-  scrollTrigger: {
-    trigger: ".about-me",
-    start: "top bottom",
-    toggleActions: "restart pause play restart",
-  },
-  duration: 4,
-  rotation: 720,
-  x: "100vw",
-});
-
-gsap.from(".experiences", {
-  scrollTrigger: {
-    trigger: ".experiences",
-    start: "top bottom",
-    toggleActions: "restart pause play restart",
-  },
-  duration: 2.5,
-  x: "-100vw",
 });
 
 // Navigation
@@ -92,6 +71,98 @@ window.addEventListener("resize", checkInView);
 // Check initial view
 checkInView();
 
+// Timeline animierte Stationen links
+gsap.from(".one", {
+  scrollTrigger: {
+    trigger: ".one",
+    start: "top bottom",
+    toggleActions: "restart pause play restart",
+  },
+  duration: 1.5,
+  x: "-100vw",
+});
+
+gsap.from(".three", {
+  scrollTrigger: {
+    trigger: ".three",
+    start: "top bottom",
+    toggleActions: "restart pause play restart",
+  },
+  duration: 1.5,
+  x: "-100vw",
+});
+
+gsap.from(".five", {
+  scrollTrigger: {
+    trigger: ".five",
+    start: "top bottom",
+    toggleActions: "restart pause play restart",
+  },
+  duration: 1.5,
+  x: "-100vw",
+});
+
+gsap.from(".seven", {
+  scrollTrigger: {
+    trigger: ".seven",
+    start: "top bottom",
+    toggleActions: "restart pause play restart",
+  },
+  duration: 1.5,
+  x: "-100vw",
+});
+
+gsap.from(".nine", {
+  scrollTrigger: {
+    trigger: ".nine",
+    start: "top bottom",
+    toggleActions: "restart pause play restart",
+  },
+  duration: 1.5,
+  x: "-100vw",
+});
+
+// Timeline animierte Stationen rechts
+gsap.from(".two", {
+  scrollTrigger: {
+    trigger: ".two",
+    start: "top bottom",
+    toggleActions: "restart pause play restart",
+  },
+  duration: 1.5,
+  x: "100vw",
+});
+
+gsap.from(".four", {
+  scrollTrigger: {
+    trigger: ".four",
+    start: "top bottom",
+    toggleActions: "restart pause play restart",
+  },
+  duration: 1.5,
+  x: "100vw",
+});
+
+gsap.from(".six", {
+  scrollTrigger: {
+    trigger: ".six",
+    start: "top bottom",
+    toggleActions: "restart pause play restart",
+  },
+  duration: 1.5,
+  x: "100vw",
+});
+
+gsap.from(".eight", {
+  scrollTrigger: {
+    trigger: ".eight",
+    start: "top bottom",
+    toggleActions: "restart pause play restart",
+  },
+  duration: 1.5,
+  x: "100vw",
+});
+
 // Kontaktformular - web3forms API
 
 const form = document.getElementById("form");
@@ -140,27 +211,25 @@ form.addEventListener("submit", function (e) {
     });
 });
 
-// Kontaktformular mit Button einblenden
+// Bored API
 
-const formContainer = document.getElementById("formContainer");
-const toggleButton = document.getElementById("toggleButton");
-const mainContainer = document.getElementById("mainContainer");
+document.addEventListener("DOMContentLoaded", () => {
+  const getActivityBtn = document.getElementById("getActivityBtn");
+  const activityDisplay = document.getElementById("activity");
 
-// Formular ausblenden
-formContainer.style.display = "none";
-
-// Formular mit Button klick anzeigen
-function toggleForm() {
-  if (formContainer.style.display === "none") {
-    formContainer.style.display = "block";
-    toggleButton.style.display = "none";
-    mainContainer.style.transform = "300px";
-  } else {
-    formContainer.style.display = "none";
-    toggleButton.style.display = "block";
-    mainContainer.style.transform = "100px";
-  }
-}
-
-// Event listener für Button
-toggleButton.addEventListener("click", toggleForm);
+  getActivityBtn.addEventListener("click", () => {
+    fetch("https://www.boredapi.com/api/activity")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok.");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        activityDisplay.textContent = data.activity;
+      })
+      .catch((error) => {
+        console.error("There was a problem with the fetch operation:", error);
+      });
+  });
+});

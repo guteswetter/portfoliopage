@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simon Erni - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="bilder/favicon.svg" />
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
@@ -28,8 +29,7 @@
     <ul class="nav-list">
       <li><a href="#Home">Home</a></li>
       <li><a href="#UeberMich">Über mich</a></li>
-      <li><a href="#Erfahrungen">Erfahrungen</a></li>
-      <li><a href="#Ausbildung">Ausbildung</a></li>
+      <li><a href="#Erfahrungen">Werdegang</a></li>
       <li><a href="#Fähigkeiten">Skills</a></li>
       <li><a href="#Kontakt">Kontakt</a></li>
     </ul>
@@ -40,233 +40,170 @@
   <section class="head-container" id="Home">
     <div class="background-img"></div>
     <div class="head">
-      <h1>Simon Erni</h1>
-      <h3>Projektleiter | Student</h3>
+      <h1>SIMON ERNI</h1>
+      <h3>Student | Projektleiter</h3>
     </div>
+    <a href="#UeberMich" class="scroll-down"></a>
   </section>
 
   <!--------------- Über mich -------------------->
-  <section class="about-me container" id="UeberMich">
-    <div class="img">
-      <img src="bilder/_DSC7127_rund.png" style="width: 15vw; height: auto" />
+  <section class="about-me" id="UeberMich">
+    <div class="about-text">
+      <h2>Über mich</h2>
+      <p>
+        Aufgewachsen rund um den schönen Thunersee, habe ich einen starken Bezug
+        zu den Bergen, wie auch zum Wasser. In der Regel findet man mich
+        entweder am See, an der Aare oder in den Bergen. Klettern, schwimmen und
+        wandern sind ein toller Ausgleich zu den vielen Stunden im Büro oder in
+        der Schule.
+        <br />
+        <br />
+        <br />
+        <br />
+
+        Es gibt aber auch Tage, da passt das Wetter nicht. Oder es gibt einfach
+        nichts zu tun. Geht dir auch so? Dann hilft ein klick auf diesen Button
+        hier:
+      </p>
+      <br />
+      <button id="getActivityBtn">Aktivität generieren</button> <br />
+      <br />
+      <p id="activity"></p>
     </div>
-    <h2>Über mich</h2>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum esse,
-      <br />
-      laborum adipisci hic harum molestiae inventore fugit repudiandae porro
-      <br />
-      deleniti quia quibusdam exercitationem architecto ducimus sunt neque vitae
-      <br />
-      iure pariatur.
-      <br />
-    </p>
   </section>
 
   <!--------------- Erfahrungen -------------------->
   <section class="experiences container" id="Erfahrungen">
     <h2>Werdegang</h2>
     <ul class="timeline">
-      <!-- Item 1 -->
+      <!-- Erfahrung 1 -->
       <li>
-        <div class="direction-l">
+        <div class="direction-l one">
           <div class="flag-wrapper">
             <span class="hexa"></span>
-            <span class="flag"
-              >Bachelor of Science in Wirtschaftsinformatik</span
-            >
+            <span class="flag">BSc in Wirtschaftsinformatik</span>
             <span class="time-wrapper"
               ><span class="time">09.2020 - 02.2025</span></span
             >
           </div>
-          <div class="desc">
-            Stduium Wirtschaftsinformatik an der Berner Fachhochschule BFH.
-          </div>
+          <div class="desc">Berner Fachhochschule BFH, Bern</div>
         </div>
       </li>
 
-      <!-- Item 2 -->
+      <!-- Erfahrung 2 -->
       <li>
-        <div class="direction-r">
+        <div class="direction-r two">
           <div class="flag-wrapper">
             <span class="hexa"></span>
-            <span class="flag">Junior Projektleiter digital bei KIBAG</span>
+            <span class="flag">Junior Projektleiter (digital) </span>
             <span class="time-wrapper"
               ><span class="time">05.2023 - heute</span></span
             >
           </div>
-          <div class="desc">
-            Durchführen kleinerer Projekte, Anforderungsanalyse, Microsoft Power
-            Platform
-          </div>
+          <div class="desc">KIBAG Dienstleistungen AG, Zürich</div>
         </div>
       </li>
 
-      <!-- Item 3 -->
+      <!-- Erfahrung 3 -->
       <li>
-        <div class="direction-l">
+        <div class="direction-l three">
           <div class="flag-wrapper">
             <span class="hexa"></span>
-            <span class="flag">Kaufmännischer Angestellter bei KIBAG</span>
+            <span class="flag">Kaufmännischer Angestellter</span>
             <span class="time-wrapper"
               ><span class="time">09.2018 - heute</span></span
             >
           </div>
-          <div class="desc">
-            Akquisition, Erarbeiten technischer Beilagen, Administrative
-            Tätigkeiten
-          </div>
+          <div class="desc">KIBAG Bauleistungen AG, Bern</div>
         </div>
       </li>
 
-      <!-- Item 4 -->
+      <!-- Erfahrung 4 -->
       <li>
-        <div class="direction-r">
+        <div class="direction-r four">
           <div class="flag-wrapper">
             <span class="hexa"></span>
-            <span class="flag">Berufsmaturität bei WKS KV Bildung</span>
+            <span class="flag">Berufsmaturität Typ Wirtschaft</span>
             <span class="time-wrapper"
               ><span class="time">08.2016 - 07.2018</span></span
             >
           </div>
-          <div class="desc">Berufsmaturität Typ Wirtschaft</div>
+          <div class="desc">WKS KV Bildung, Bern</div>
         </div>
       </li>
 
-      <!-- Item 5 -->
+      <!-- Erfahrung 5 -->
       <li>
-        <div class="direction-l">
+        <div class="direction-l five">
           <div class="flag-wrapper">
             <span class="hexa"></span>
-            <span class="flag"
-              >Kaufmännischer Angestellter bei Cäsar Bay AG</span
-            >
+            <span class="flag">Kaufmännischer Angestellter</span>
             <span class="time-wrapper"
               ><span class="time">08.2016 - 07.2018</span></span
             >
           </div>
-          <div class="desc">Submissionsprozesse, Administration</div>
+          <div class="desc">Cäsar Bay AG, Konolfingen</div>
         </div>
       </li>
 
-      <!-- Item 6 -->
+      <!-- Erfahrung 6 -->
       <li>
-        <div class="direction-r">
+        <div class="direction-r six">
           <div class="flag-wrapper">
             <span class="hexa"></span>
-            <span class="flag"
-              >Praktikum bei Bundesamt für Informatik und Telekommunikation
-              BIT</span
-            >
+            <span class="flag">Kaufmännisches Praktikum </span>
             <span class="time-wrapper"
               ><span class="time">02.2016 - 07.2016</span></span
             >
           </div>
           <div class="desc">
-            Onboardingprozesse, Qualitätssicherung, Bereitstellung von Hardware
+            Bundesamt für Informatik und Telekommunikation BIT, Zollikofen
           </div>
         </div>
       </li>
 
-      <!-- Item 7 -->
+      <!-- Erfahrung 7 -->
       <li>
-        <div class="direction-l">
+        <div class="direction-l seven">
           <div class="flag-wrapper">
             <span class="hexa"></span>
-            <span class="flag">Zivildienst bei Foyer VIADUKT</span>
+            <span class="flag">Zivildienst Jugendwohnheim</span>
             <span class="time-wrapper"
               ><span class="time">05.2015 - 11.2015</span></span
             >
           </div>
-          <div class="desc">
-            Kochen, Instandhaltung Gebäude und Umschwung, Betreuung der Bewohner
-          </div>
+          <div class="desc">Foyer VIADUKT, Biel</div>
         </div>
       </li>
 
-      <!-- Item 7 -->
+      <!-- Erfahrung 8 -->
       <li>
-        <div class="direction-r">
+        <div class="direction-r eight">
           <div class="flag-wrapper">
             <span class="hexa"></span>
-            <span class="flag">Rekrutenschule bei Schweizerische Armee</span>
+            <span class="flag">Rekrutenschule Fliegertruppen</span>
             <span class="time-wrapper"
               ><span class="time">10.2014 - 04.2015</span></span
             >
           </div>
-          <div class="desc">Flugplatzsicherungssoldat, Fliegertruppen</div>
+          <div class="desc">Schweizerische Armee, Payerne/Liestal</div>
         </div>
       </li>
 
-      <!-- Item 8 -->
+      <!-- Erfahrung 9 -->
       <li>
-        <div class="direction-l">
+        <div class="direction-l nine">
           <div class="flag-wrapper">
             <span class="hexa"></span>
-            <span class="flag"
-              >Ausbildung zum Kaufmann bei Wirtschaftsmittelschule</span
-            >
+            <span class="flag">Ausbildung zum Kaufmann</span>
             <span class="time-wrapper"
               ><span class="time">08.2011 - 07.2014</span></span
             >
           </div>
-          <div class="desc">Kaufmann EFZ, E-Profil</div>
+          <div class="desc">Wirtschaftsmittelschule, Thun</div>
         </div>
       </li>
     </ul>
-
-    <!--    <h2>Erfahrungen</h2>
-    <div class="timeline">
-      <div class="line"></div>
-      <div class="stations">
-        <div class="station">
-          <b>Junior Projektleiter digital</b>
-          <div>KIBAG Dienstleistungen AG</div>
-          <div>05.2023 - heute</div>
-        </div>
-        <div class="station">
-          <b>Kaufmännischer Angestellter</b>
-          <div>KIBAG Bauleistungen AG</div>
-          <div>09.2018 - heute</div>
-        </div>
-        <div class="station">
-          <b>Bachelorstudium Wirtschaftsinformatik</b>
-          <div>Berner Fachhochschule BFH</div>
-          <div>09.2020 - heute</div>
-        </div>
-        <div class="station">
-          <b>Kaufmännischer Angestellter</b>
-          <div>Cäsar Bay AG</div>
-          <div>08.2016 - 08.2018</div>
-        </div>
-        <div class="station">
-          <b>Berufsmaturität Typ Wirtschaft</b>
-          <div>WKS Bildung</div>
-          <div>08.2016 - 07.2018</div>
-        </div>
-        <div class="station">
-          <b>Praktikant</b>
-          <div>Bundesamt für Informatik und Telekommunikation BIT</div>
-          <div>02.2016 - 07.2016</div>
-        </div>
-        <div class="station">
-          <b>Zivildienst</b>
-          <div>FONDATION gad STIFTUNG</div>
-          <div>05.2015 - 11.2015</div>
-        </div>
-        <div class="station">
-          <b>Rekrutenschule</b>
-          <div>Flugplatzsicherungssoldat</div>
-          <div>10.2014 - 04.2015</div>
-        </div>
-        <div class="station">
-          <b>Kaufmännische Grundbildung EFZ</b>
-          <div>Wirtschaftsmittelschule</div>
-          <div>08.2011 - 07.2014</div>
-        </div>
-      </div>
-    </div>
-    -->
   </section>
 
   <!--------------- Skills -------------------->
@@ -294,13 +231,16 @@
   </section>
 
   <!--------------- Kontakt -------------------->
-  <div class="contact container" id="Kontakt">
-    <h2>Kontakt</h2>
-    <button id="toggleButton" class="kontakt-button">Kontaktier mich!</button>
+  <div class="container" id="Kontakt">
     <div class="main-containter" id="mainContainer">
       <div class="form-container" id="formContainer">
+        <h2>Kontakt</h2>
+        <p><b>Hast du eine Frage?</b></p>
+        <br />
         <p>
           Fülle das untenstehende Formular aus, um mir eine Nachricht zu senden.
+          <br />
+          Falls du eine Rückmeldung willst, schreib das auch dazu.
         </p>
         <br />
         <form
@@ -378,6 +318,9 @@
     /></a>
     <a href="mailto:simon.erni@students.bfh.ch"
       ><img src="/bilder/email.svg"
+    /></a>
+    <a href="https://github.com/guteswetter"
+      ><img src="/bilder/github_logo.svg"
     /></a>
   </div>
 </body>
